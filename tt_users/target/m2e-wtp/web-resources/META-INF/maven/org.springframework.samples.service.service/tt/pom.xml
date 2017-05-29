@@ -37,6 +37,9 @@
 
 		<!-- Test -->
 		<junit.version>4.11</junit.version>
+		
+		<oauth.version>2.1.0.RELEASE</oauth.version>
+		<jwt.version>1.0.7.RELEASE</jwt.version>
 
 	</properties>
 
@@ -247,6 +250,19 @@
 			<artifactId>spring-context-support</artifactId>
 			<version>${springframework.version}</version>
 		</dependency>			
+		
+		<!-- oauth -->
+		<dependency>
+			<groupId>org.springframework.security.oauth</groupId>
+			<artifactId>spring-security-oauth2</artifactId>
+			<version>${oauth.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-jwt</artifactId>
+			<version>${jwt.version}</version>
+		</dependency>		
 
 	</dependencies>	
 	
