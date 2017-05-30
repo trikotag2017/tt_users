@@ -21,10 +21,10 @@ import tt_users.model.User;
 import tt_users.model.UserRole;
 
 
-//@Configuration
-//@EnableTransactionManagement
-//@ComponentScan({ "tt" })
-//@PropertySource(value = { "classpath:app.properties" })
+@Configuration
+@EnableTransactionManagement
+@ComponentScan({ "tt_users" })
+@PropertySource(value = { "classpath:app.properties" })
 public class HibernateConfiguration {
 	
 	@Resource
@@ -60,18 +60,6 @@ public class HibernateConfiguration {
         
         sessionBuilder.addAnnotatedClasses(User.class);
         sessionBuilder.addAnnotatedClasses(UserRole.class);
-        /*
-        sessionBuilder.addAnnotatedClasses(DirProvider.class);
-        sessionBuilder.addAnnotatedClasses(DirNomenclature.class);
-        sessionBuilder.addAnnotatedClasses(Store.class);
-        sessionBuilder.addAnnotatedClasses(Tail.class);
-        sessionBuilder.addAnnotatedClasses(DirNomenclGroup.class);
-        sessionBuilder.addAnnotatedClasses(DirNomenclGroupRoot.class);
-        sessionBuilder.addAnnotatedClasses(DirGender.class);
-        sessionBuilder.addAnnotatedClasses(OrderItems.class);
-        sessionBuilder.addAnnotatedClasses(Order.class);
-        sessionBuilder.addAnnotatedClasses(ContactUsMessages.class);
-		*/
         return sessionBuilder.buildSessionFactory();
     }
     

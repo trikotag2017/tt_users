@@ -18,14 +18,14 @@
 		<servlet.version>2.5</servlet.version>
 		
 		<!-- Spring -->
-		<springframework.version>4.2.0.RELEASE</springframework.version>
+		<springframework.version>4.3.0.RELEASE</springframework.version>
 		<springsecurity.version>4.0.1.RELEASE</springsecurity.version>
 		
 		<!-- Hibernate / JPA -->
         <hibernate.version>4.3.10.Final</hibernate.version>
         <mysql.connector.version>5.1.31</mysql.connector.version>
 
-		<jackson.version>2.5.3</jackson.version>
+		<jackson.version>2.7.5</jackson.version>
 
 		<aspectj.version>1.8.9</aspectj.version>
 
@@ -123,7 +123,7 @@
 		</dependency>
 	
 
-		<!-- Logging with SLF4J & LogBack -->
+		<!-- Logging with SLF4J & LogBack >
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
@@ -135,7 +135,7 @@
 			<artifactId>logback-classic</artifactId>
 			<version>${logback.version}</version>
 			<scope>runtime</scope>
-		</dependency>
+		</dependency -->
 
 		
 		<dependency>
