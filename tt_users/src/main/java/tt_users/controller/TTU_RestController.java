@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import tt_users.model.User;
 
 @RestController
-public class HelloWorldRestController {
+public class TTU_RestController {
 
 	
 	//@Autowired

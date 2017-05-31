@@ -1,4 +1,4 @@
-package tt_users.config;
+package tt_users.security;
 
 import java.util.Properties;
 
