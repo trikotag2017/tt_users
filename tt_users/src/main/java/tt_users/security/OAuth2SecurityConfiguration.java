@@ -15,6 +15,8 @@ import org.springframework.security.oauth2.provider.approval.TokenStoreUserAppro
 import org.springframework.security.oauth2.provider.request.DefaultOAuth2RequestFactory;
 import org.springframework.security.oauth2.provider.token.TokenStore;
 import org.springframework.security.oauth2.provider.token.store.InMemoryTokenStore;
+import org.springframework.security.web.csrf.CsrfFilter;
+import org.springframework.web.filter.CharacterEncodingFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -33,6 +35,12 @@ public class OAuth2SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	 
 	    @Override
 	    protected void configure(HttpSecurity http) throws Exception {
+	    	
+	        CharacterEncodingFilter filter = new CharacterEncodingFilter();
+	        filter.setEncoding("UTF-8");
+	        filter.setForceEncoding(true);
+	        http.addFilterBefore(filter,CsrfFilter.class);
+
 	        http
 	        .csrf().disable()
 	        .anonymous().disable()
