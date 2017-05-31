@@ -1,6 +1,6 @@
-D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\AuthorizationServerConfiguration.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\controller\TTU_RestController.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\model\User.java
+D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\AuthorizationServerConfigurationMEMORY.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\controller\TTU_Ctrl.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\config\TT_Users_Initializer.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\HibernateConfiguration.java
@@ -10,4 +10,5 @@ D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\OAuth2SecurityConfi
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\MethodSecurityConfig.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\model\UserRole.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\config\CORSFilter.java
+D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\AuthorizationServerConfigurationSQL.java
 D:\bvv\git_tt_users\tt_users\src\main\java\tt_users\security\SecurityInit.java
