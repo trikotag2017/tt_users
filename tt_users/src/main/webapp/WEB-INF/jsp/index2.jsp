@@ -18,7 +18,7 @@
 
 	<body>
 		<div  ng-app="myApp" ng-controller="mainCtrl">
-		<oauth
+		<!--  -->oauth
 	      site="http://localhost:8080/spring-security-oauth-server"
 	      client-id="clientId"
 	      redirect-uri="http://localhost:8080/spring-security-oauth-ui-implicit/index"
