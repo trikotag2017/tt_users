@@ -23,11 +23,11 @@ import org.springframework.web.servlet.view.JstlView;
 //@PropertySource("classpath:app.properties")
 public class TT_Users_Configuration   extends WebMvcConfigurerAdapter  {
 	
-	private static final String PROP_DATABASE_DRIVER = "db.driver";
+/*	private static final String PROP_DATABASE_DRIVER = "db.driver";
     private static final String PROP_DATABASE_PASSWORD = "db.password";
     private static final String PROP_DATABASE_URL = "db.url";
     private static final String PROP_DATABASE_USERNAME = "db.username";
-
+*/
     
 	@Resource
     private Environment env;
