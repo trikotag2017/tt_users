@@ -32,7 +32,7 @@ public class TT_Users_Configuration   extends WebMvcConfigurerAdapter  {
 	@Resource
     private Environment env;
 
-    
+/*    
     @Bean(name = "dataSource")
     public DataSource dataSource() {
     	DriverManagerDataSource  dataSource = new DriverManagerDataSource ();
@@ -44,7 +44,7 @@ public class TT_Users_Configuration   extends WebMvcConfigurerAdapter  {
             System.out.println("======== dataSource =======");
             return dataSource;
     }
-
+*/
     
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
