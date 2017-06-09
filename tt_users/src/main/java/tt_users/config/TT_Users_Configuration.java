@@ -52,7 +52,7 @@ public class TT_Users_Configuration   extends WebMvcConfigurerAdapter  {
     }
 
     
-  //For file uploading
+    //For file uploading
     @Bean(name = "multipartResolver")
     public CommonsMultipartResolver createMultipartResolver() {
         CommonsMultipartResolver resolver=new CommonsMultipartResolver();

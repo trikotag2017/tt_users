@@ -6,14 +6,14 @@ app.controller('mainCtrl',
         grant_type:"password", 
         username: "", 
         password: "", 
-        client_id: "clientIdPassword"
+        client_id: "bvv"
     };
-    $scope.encoded = btoa("clientIdPassword:secret");
+    $scope.encoded ="clientIdPassword:12345678";
      
     $scope.login = function() {   
         var req = {
             method: 'POST',
-            url: "http://trikotag.by/restt/oauth/token",
+            url: "https://trikotag.by/restt/oauth/token",
             headers: {
                 "Authorization": "Basic " + $scope.encoded,
                 "Content-type": "application/x-www-form-urlencoded; charset=utf-8"

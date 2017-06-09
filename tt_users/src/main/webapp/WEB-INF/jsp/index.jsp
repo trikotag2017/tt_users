@@ -25,13 +25,6 @@
 		<div class="row">
 			<div class="col-md-12">
 				<form class="form-horizontal">
-					<oauth
-				      site="http://trikotag.by/"
-				      client-id="clientId"
-				      redirect-uri="http://trikotag.by/restt/oauth/token"
-				      scope="read"
-				      template="oauthTemplate">
-			    	</oauth>
 		
 				  <div class="form-group">
 				    
