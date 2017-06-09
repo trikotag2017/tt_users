@@ -12,36 +12,48 @@
  
 
 	<body  ng-app="myApp" ng-controller="mainCtrl">
+		<header id="header"><!--header-->
+		<div class="header_top"><!--header_top-->
+			<div class="container">
+				<div class="row"> 
+					<p>Login</p>
+				</div>
+			</div>
+		</div>
+		</header>
 	<div class="container">
-
-		<form class="form-horizontal">
-			<oauth
-		      site="http://trikotag.by/"
-		      client-id="clientId"
-		      redirect-uri="http://trikotag.by/restt/oauth/token"
-		      scope="read"
-		      template="oauthTemplate">
-	    	</oauth>
-
-		  <div class="form-group">
-		    <label for="username">Username</label>
-		    <div class="col-md-3">
-		    	<input type="text" class="form-control" id="username" ng-model="data.username">
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="pwd">Password:</label>
-		    <div class="col-md-3">
-		    	<input type="password" class="form-control" id="pwd" ng-model="data.password">
-		    </div>
-		  </div>
-		  <div class="checkbox">
-		    <label><input type="checkbox"> Remember me</label>
-		  </div>
-		  <button type="submit" class="btn btn-default" ng-click="login()">Login</button>
-		  <a href="#" ng-click="login()">Login</a>
-		</form> 
+		<div class="row">
+			<div class="col-md-12">
+				<form class="form-horizontal">
+					<oauth
+				      site="http://trikotag.by/"
+				      client-id="clientId"
+				      redirect-uri="http://trikotag.by/restt/oauth/token"
+				      scope="read"
+				      template="oauthTemplate">
+			    	</oauth>
 		
+				  <div class="form-group">
+				    
+				    <div class="col-md-3">
+				    	<label for="username">Username</label>
+				    	<input type="text" class="form-control" id="username" ng-model="data.username">
+				    </div>
+				  </div>
+				  <div class="form-group">
+				    
+				    <div class="col-md-3">
+				    	<label for="pwd">Password:</label>
+				    	<input type="password" class="form-control" id="pwd" ng-model="data.password">
+				    </div>
+				  </div>
+				  <div class="checkbox">
+				    <label><input type="checkbox"> Remember me</label>
+				  </div>
+				  <button type="submit" class="btn btn-default" ng-click="login()">Login</button>
+				</form> 
+			</div>
+		</div>
 	</div>
 	</body>
 

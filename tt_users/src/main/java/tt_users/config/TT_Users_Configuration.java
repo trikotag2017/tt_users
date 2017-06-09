@@ -20,7 +20,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = "tt_users")
-@PropertySource("classpath:app.properties")
+//@PropertySource("classpath:app.properties")
 public class TT_Users_Configuration   extends WebMvcConfigurerAdapter  {
 	
 	private static final String PROP_DATABASE_DRIVER = "db.driver";
